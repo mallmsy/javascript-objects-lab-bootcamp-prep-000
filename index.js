@@ -11,9 +11,9 @@ return(object)
 }
 
 function deleteFromObjectByKey(object, key, value) {
-  recipes = Object.assign({},object, {[key]: value})
+  recipes = Object.assign({},object,{[key]: value})
   
-  delete recipes.key;
+  delete recipes[key];
   return(recipes);
 }
 
